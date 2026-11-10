@@ -1,5 +1,0 @@
--- Add unit and conversion columns to items table
-ALTER TABLE items ADD COLUMN IF NOT EXISTS unit TEXT DEFAULT 'PCS';
-ALTER TABLE items ADD COLUMN IF NOT EXISTS has_conversion BOOLEAN DEFAULT FALSE;
-ALTER TABLE items ADD COLUMN IF NOT EXISTS conversion_unit TEXT;
-ALTER TABLE items ADD COLUMN IF NOT EXISTS conversion_rate DECIMAL(10, 2) DEFAULT 1;
